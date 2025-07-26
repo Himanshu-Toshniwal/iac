@@ -16,8 +16,8 @@ env:
     ***REMOVED***: ${{ secrets.***REMOVED*** }}
     ***REMOVED***: ${{ secrets.***REMOVED*** }}
     # S3 bucket for the terraform state. 
-    BUCKET_TF_STATE: ${{ secrets.BUCKET_TF_STATE }}
-    AWS_REGION: us-east-1
+    BUCKET_TF_STATE: ${{ secrets.BUCKET_TF }}
+    AWS_REGION: eu-west-3
 
 jobs:
     terraform:
