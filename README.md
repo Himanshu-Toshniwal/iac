@@ -117,8 +117,8 @@ sudo rm -rf /usr/local/aws-cli
 # **Configure AWS Credentials in command line**
 ```
 $ aws configure
-AWS Access Key ID [None]: ***REMOVED***TJSSUDMJGV54NJVD
-AWS Secret Access Key [None]:RnmxCythU6vmfQrtZioggLXuSSCvszGmqtnOeu8D
+AWS Access Key ID [None]: <REDACTED> 
+AWS Secret Access Key [None]:<REDACTED> 
 Default region name [None]: eu-west-3
 Default output format [None]: json
 
@@ -131,7 +131,7 @@ cat $HOME/.aws/credentials
 ```
 #**Command to reset your AWS credentials incase of a credentials error**:
 
-$ for var in ***REMOVED*** ***REMOVED*** AWS_SESSION_TOKEN AWS_SECURITY_TOKEN ; do eval unset $var ; done
+$ for var in AWS_ACCESS_KEY_ID AWS_SECRET_ACCESS_KEY AWS_SESSION_TOKEN AWS_SECURITY_TOKEN ; do eval unset $var ; done
 
 ## F) Windows OS - Terraform & AWS CLI Install
 - [Download Terraform](https://www.terraform.io/downloads.html)
@@ -186,3 +186,6 @@ $ for var in ***REMOVED*** ***REMOVED*** AWS_SESSION_TOKEN AWS_SECURITY_TOKEN ; 
      sudo yum install -y yum-utils
      sudo yum-config-manager --add-repo https://rpm.releases.hashicorp.com/RHEL/hashicorp.repo
      sudo yum -y install terraform
+
+
+
